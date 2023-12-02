@@ -1,5 +1,3 @@
-f = open("input", "r")
-
 numbers = {
     "one": 1,
     "two": 2,
@@ -36,6 +34,7 @@ def find_first_digit(string, reversed=False):
     assert False  # no digit found!
 
 total = 0
+f = open("input", "r")
 next_line = f.readline()
 while next_line:
     left = find_first_digit(next_line)
